@@ -102,13 +102,13 @@ function atualizarPedido(){
 }
 
 function removerPedido(){
-    const id = number (document.getElementById("idRemover").value);
+    const id = Number (document.getElementById("idRemover").value);
 
 
-    facth("https://projeto-api-x4p9.onrender.com/pedidos",{
+    fetch("https://projeto-api-x4p9.onrender.com/pedidos",{
     method: "DELETE",
     headers:{
-        'Content-Type': "application/JSON"
+        'Content-Type': "application/json"
         },
         // envia apenas o id do pedido que sera removido 
         body: JSON.stringify({
