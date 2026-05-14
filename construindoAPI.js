@@ -32,11 +32,11 @@ const server = http.createServer((req, res) => {
     const rota= urlCompleta.pathname;
     const metodo = req.method;
 
-    res.setHeader("Access-Control-Allow-origin", "*");
-    res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
+    res.setHeader("Access-Control-Allow-Origin", "*")
+    res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
     res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
-    if(metodo === "OPTIONS "){
+    if(metodo === "OPTIONS"){
         res.statusCode = 204;
         res.end();
         return;

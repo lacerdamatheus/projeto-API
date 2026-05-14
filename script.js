@@ -43,7 +43,7 @@ function cadastarPedido(){
         
         method: "POST",
         headers: {
-            'Content-Type': "application/JSON"
+            'Content-Type': "application/json"
         },
         body: JSON.stringify({
             id: Date.now(), //incluir o id gera um id na hora com a data e dia do pedido
