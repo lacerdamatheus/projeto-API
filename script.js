@@ -67,7 +67,7 @@ function cadastarPedido(){
    .catch(() =>{
         alert("Erro ao Cadastrar Pedido")
     });
-}
+};
 
 //Atualiza os pedidos (PUT) função responsavel por Atualizar os Status de um pedido
 
@@ -99,13 +99,13 @@ function atualizarPedido(){
     .catch(() =>{
         alert("Erro ao Atualizar o Pedido")
     });
-}
+};
 
 function removerPedido(){
     const id = Number (document.getElementById("idRemover").value);
 
 
-    fetch("https://projeto-api-x4p9.onrender.com/pedidos",{
+    fecth("https://projeto-api-x4p9.onrender.com/pedidos",{
     method: "DELETE",
     headers:{
         'Content-Type': "application/json"
