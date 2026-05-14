@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Pedidos</h1>
+
+        <!-- Cadastro -->
+        <h2>Novo Pedido</h2>
+        <input type="text" id ="cliente " placeholder="Nome do client">
+        <input type="text" td="Produto" placeholder="Produto">
+        <button onclick="cadastarPedido()">Cadastrar Pedido</button>
+        
+        <!-- ATUALIZAÇÂO -->
+         <h2>Atualizar Status</h2>
+         <input type="number" id="idAtualizar" placeholder="ID do Pedido">
+         <input type="text" id="statusAtualizar" placeholder="Novo Status">
+         <button onclick="atualizarPedido()">Atualizar</button>
+
+        <!-- EXCLUIR PEDIDO -->
+          <h2>Cancelar Pedido</h2>
+          <input type="number" id="idRemover" placeholder="ID do Pedido">
+          <button onclick="removerPedido()"> Cancelar</button>
+
+        <!-- LISTA DE PEDIDO   -->
+            <h2>Lista de Pedidos</h2>
+            <ul id="Lista">Carregando Pedidos...</ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
