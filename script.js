@@ -7,7 +7,7 @@ function listarPedidos(){
     lista.innerHTML = "Carregando Pedidos...";
 
     //faz o requisito GET para API com URL dela publicada (ou local)
-    fetch(xxxxxxxxxxxxxx)
+    fetch("https://projeto-api-x4p9.onrender.com/pedidos")
     //Converte a resposta da API para JSON 
     .then(res => res.json())
 
@@ -39,7 +39,7 @@ function cadastarPedido(){
     const cliente = document.getElementById("cliente").value;
     const produto = document.getElementById("produto").value; 
 
-    fetch(xxxxxxxxxxxxxxx, {
+    fetch("https://projeto-api-x4p9.onrender.com/pedidos", {
         
         method: "POST",
         headers: {
@@ -77,7 +77,7 @@ function atualizarPedido(){
     //pega o novo status do pedido digitado no input
     const status = document.getElementById("statusAtualizar").value;
     //envia uma requisição PUT para API 
-    fetch(xxxxxxxxxxxxxxxxxxxxxxx,{
+    fetch("https://projeto-api-x4p9.onrender.com/pedidos",{
         method: "PUT",
         headers: {
         'Content-Type': "application/JSON"
@@ -105,7 +105,7 @@ function removerPedido(){
     const id = number (document.getElementById("idRemover").value);
 
 
-    facth(xxxxxxxxxxxxxxxxxxxx,{
+    facth("https://projeto-api-x4p9.onrender.com/pedidos",{
     method: "DELETE",
     headers:{
         'Content-Type': "application/JSON"
