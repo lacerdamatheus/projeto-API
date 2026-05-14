@@ -172,3 +172,5 @@ const PORT = process.env.PORT || 3000;
 server.listen(3000,() =>{
     console.log(`Servidor esta rodando na porta ${PORT}`);
 });
+
+//atualização 14/05/2026

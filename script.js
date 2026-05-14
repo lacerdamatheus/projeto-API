@@ -126,3 +126,6 @@ function removerPedido(){
 };
 //chama a função assim que a pagina carrega. Assim os pedidos ja aparecem automaticamente na tela 
 listarPedidos();
+
+
+//atualização 14/05/2026
