@@ -23,7 +23,7 @@ let pedidos = [
 //criação do servidor "server"
 const server = http.createServer((req, res) => {
    //definindo a resposta do servidor como uma aplicação JSON
-    res.setHeader('Content-taype', 'aplication/JSON');
+    res.setHeader('Content-taype', 'application/JSON');
     
     //leitura da url
     const urlCompleta = url.parse(req.url, true );
@@ -32,9 +32,9 @@ const server = http.createServer((req, res) => {
     const rota= urlCompleta.pathname;
     const metodo = req.method;
 
-    res.setHeader("Axxess-Control-Allow-origin", "*");
-    res.setHeader("Axxess-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
-    res.setHeader("Axxess-Control-Allow-Headers", "Content-Type");
+    res.setHeader("Access-Control-Allow-origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
     if(metodo === "OPTIONS "){
         res.statusCode = 204;
