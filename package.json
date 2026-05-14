@@ -1,20 +1,20 @@
 {
-  "name": "backend",
+  "name": "api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "construindoAPI.js",
   "scripts": {
-    "start":"node./api/constrindoAPI.js" 
+    "start": "node ./API/construindoAPI"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lacerdamatheus/Aula-de-Beck-and-.git"
+    "url": "git+https://github.com/lacerdamatheus/projeto-API.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lacerdamatheus/Aula-de-Beck-and-/issues"
+    "url": "https://github.com/lacerdamatheus/projeto-API/issues"
   },
-  "homepage": "https://github.com/lacerdamatheus/Aula-de-Beck-and-#readme"
+  "homepage": "https://github.com/lacerdamatheus/projeto-API#readme"
 }
