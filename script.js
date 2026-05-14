@@ -7,7 +7,7 @@ function listarPedidos(){
     lista.innerHTML = "Carregando Pedidos...";
 
     //faz o requisito GET para API com URL dela publicada (ou local)
-    fetch("https://aula-de-beck-and.onrender.com/pedidos")
+    fetch(xxxxxxxxxxxxxx)
     //Converte a resposta da API para JSON 
     .then(res => res.json())
 
@@ -39,7 +39,7 @@ function cadastarPedido(){
     const cliente = document.getElementById("cliente").value;
     const produto = document.getElementById("produto").value; 
 
-    fetch("https://aula-de-beck-and.onrender.com/pedidos", {
+    fetch(xxxxxxxxxxxxxxx, {
         
         method: "POST",
         headers: {
@@ -77,7 +77,7 @@ function atualizarPedido(){
     //pega o novo status do pedido digitado no input
     const status = document.getElementById("statusAtualizar").value;
     //envia uma requisição PUT para API 
-    fetch("https://aula-de-beck-and.onrender.com/pedidos",{
+    fetch(xxxxxxxxxxxxxxxxxxxxxxx,{
         method: "PUT",
         headers: {
         'Content-Type': "application/JSON"
@@ -105,7 +105,7 @@ function removerPedido(){
     const id = number (document.getElementById("idRemover").value);
 
 
-    facth("https://aula-de-beck-and.onrender.com/pedidos",{
+    facth(xxxxxxxxxxxxxxxxxxxx,{
     method: "DELETE",
     headers:{
         'Content-Type': "application/JSON"
